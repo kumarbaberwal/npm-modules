@@ -19,6 +19,7 @@ const dbName = 'Auth';
 
         // Select the 'users' collection
         const collection = db.collection('users');
+        
         // Find all documents in the 'users' collection and convert them to an array
         const returnedData = await collection.find().toArray();
         
